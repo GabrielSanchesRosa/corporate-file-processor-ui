@@ -1,10 +1,20 @@
-import './App.css'
+import { Routes, Route } from "react-router-dom"
+import DashboardPage from "./features/dashboard/DashboardPage"
+import AppLayout from "./shared/layouts/AppLayout"
+import FilesPage from "./features/files/FilesPage"
+import UploadPage from "./features/upload/UploadPage"
+import ErrorsPage from "./features/errors/ErrorsPage"
 
 function App() {
   return (
-    <div>
-      <h1>Corporate File Processor</h1>
-    </div>
+    <Routes>
+      <Route element={<AppLayout />}>
+        <Route path="/" element={<DashboardPage />} />
+        <Route path="/files" element={<FilesPage />} />
+        <Route path="/upload" element={<UploadPage />} />
+        <Route path="/errors" element={<ErrorsPage />} />
+      </Route>
+    </Routes>
   )
 }
 
