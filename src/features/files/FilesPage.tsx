@@ -1,6 +1,6 @@
 import { Chip, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material"
 import { useProcessedFiles } from "./useProcessedFiles"
-import type { FileStatus } from "./types"
+import type { FileStatus } from "../../shared/types/file" 
 import { useNavigate } from "react-router-dom"
 
 const statusColorMap: Record<FileStatus, 'success' | 'error' | 'warning' | 'default'> = {
