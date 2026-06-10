@@ -1,5 +1,5 @@
 import api from "../../shared/lib/api";
-import type { ProcessedFile } from "./types";
+import type { ProcessedFile } from "../../shared/types/file"; 
 
 export async function getProcessedFiles(): Promise<ProcessedFile[]> {
     const response = await api.get<ProcessedFile[]>('/files')

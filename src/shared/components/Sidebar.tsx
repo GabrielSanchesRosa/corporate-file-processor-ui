@@ -1,5 +1,4 @@
 import { Box, List, ListItemButton, ListItemText, Typography } from '@mui/material'
-import { height } from '@mui/system'
 import { useNavigate, useLocation } from 'react-router-dom'
 
 const SIDEBAR_WIDTH = 240
@@ -45,4 +44,4 @@ function Sidebar() {
     )
 }
 
-export default Sidebar
+export default Sidebar //TODO: Validar tamanho da sidebar quando a quantidade de registros ultrapassa a altura total da tela
